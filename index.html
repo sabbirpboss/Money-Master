@@ -11,8 +11,6 @@
 
     <!-- Customize CSS -->
     <link rel="stylesheet" href="css/style.css" />
-
-
   </head>
   <body>
     <main>
@@ -21,7 +19,11 @@
       <section class="container">
         <div class="card-group gap-5">
           <div class="card border-0">
-            <img src="images/money.jpg" class="card-img-top customize-height" alt="money" />
+            <img
+              src="images/money.jpg"
+              class="card-img-top customize-height"
+              alt="money"
+            />
           </div>
 
           <div class="card border-0 bg-secondary p-2 text-dark bg-opacity-10">
@@ -32,7 +34,8 @@
                   <p class="text-dark py-1 border-0">Income:</p>
                 </div>
                 <div class="col-md-9">
-                  <input id="my-income"
+                  <input
+                    id="my-income"
                     class="bg-secondary text-dark px-3 py-1 bg-opacity-10 border-0 rounded"
                     type="text"
                     placeholder="Your Income"
@@ -45,7 +48,8 @@
                   <p class="text-dark py-1 border-0">Food:</p>
                 </div>
                 <div class="col-md-9">
-                  <input id="food-cost"
+                  <input
+                    id="food-cost"
                     class="bg-secondary text-dark px-3 py-1 bg-opacity-10 border-0 rounded"
                     type="text"
                     placeholder="Your Food"
@@ -55,7 +59,8 @@
                   <p class="text-dark py-1 border-0">Rent:</p>
                 </div>
                 <div class="col-md-9">
-                  <input id="rent-cost"
+                  <input
+                    id="rent-cost"
                     class="bg-secondary text-dark px-3 py-1 bg-opacity-10 border-0 rounded"
                     type="text"
                     placeholder="Your Rent"
@@ -65,7 +70,8 @@
                   <p class="text-dark py-1 border-0">Clothes:</p>
                 </div>
                 <div class="col-md-9">
-                  <input id="cloth-cost"
+                  <input
+                    id="cloth-cost"
                     class="bg-secondary text-dark px-3 py-1 bg-opacity-10 border-0 rounded"
                     type="text"
                     placeholder="Your Clothes"
@@ -73,11 +79,17 @@
                 </div>
               </div>
               <div class="col-md-12 text-center">
-                <button id="calculate-button" class="btn btn-success">Calculate</button>
+                <button id="calculate-button" class="btn btn-success">
+                  Calculate
+                </button>
               </div>
 
-              <h5 class="card-title text-center my-4">Total Expenses: <span id="total-expenses">00</span></h5>
-              <h5 class="card-title text-center my-4">Balance: <span id="balance">00</span></h5>
+              <h5 class="card-title text-center my-4">
+                Total Expenses: <span id="total-expenses">00</span>
+              </h5>
+              <h5 class="card-title text-center my-4">
+                Balance: <span id="balance">00</span>
+              </h5>
 
               <!-- saving part -->
               <div class="row">
@@ -86,6 +98,7 @@
                 </div>
                 <div class="col-md-4 text-center">
                   <input
+                    id="percent-field"
                     class="w-100 bg-secondary text-dark px-3 py-1 bg-opacity-10 border-0 rounded"
                     type="text"
                     placeholder="Your Percent"
@@ -95,11 +108,13 @@
                   <p class="text-dark py-1 border-0">%</p>
                 </div>
                 <div class="col-md-4 text-center">
-                  <button class="btn btn-success w-100">Save</button>
+                  <button id="saving-button" class="btn btn-success w-100">
+                    Save
+                  </button>
                 </div>
-                <h5 class="card-title text-center mt-4">Saving Amount: 2000</h5>
+                <h5 class="card-title text-center mt-4">Saving Amount: <span id="saving-amount">00</span></h5>
                 <h5 class="card-title text-center mt-4">
-                  Remaining Balance: 2500
+                  Remaining Balance: <span id="remaining-balance">00</span>
                 </h5>
               </div>
             </div>
@@ -110,7 +125,8 @@
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- Customize JS  -->
-        <script src="js/main.js"></script>
+    <!-- Customize JS  -->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/saving.js"></script> -->
   </body>
 </html>
