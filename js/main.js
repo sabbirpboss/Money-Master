@@ -15,14 +15,6 @@ document
       parseFloat(foodCost) + parseFloat(rentCost) + parseFloat(clothCost);
     const totalExpenses = (document.getElementById("total-expenses").innerText =
       totalExpensesCalculation);
-    // console.log(totalExpensesCalculation);
-
-    // if (foodCost == "string" || rentCost == "string" || clothCost == "string") {
-    //     alert('please insert a number');
-    // }
-    // if (foodCost <= 0 || rentCost <= 0 || clothCost <= 0) {
-    //     alert('Please inset a positive value');
-    // }
 
     if (isNaN(foodCost) != 0 || foodCost <= 0) {
       alert("Enter a valid food cost");
@@ -35,22 +27,12 @@ document
       alert("Enter a valid cloth cost");
     }
 
-    //summation total expenses
-
-    // const totalExpensesCalculation = parseFloat(foodCost) + parseFloat(rentCost) + parseFloat(clothCost);
-
-    // const totalExpensesText = totalExpenses.innerText;
-
-    // totalExpenses.innerText = totalExpensesCalculation;
-
-    // console.log(totalExpensesText);
 
     //calculation balance
     const myIncome = document.getElementById("my-income").value;
     const presentBalance = myIncome - totalExpensesCalculation;
     let balance = document.getElementById("balance");
     balance.innerText = presentBalance;
-    // const balanceText = balance.innerText;
 
     if (myIncome < totalExpensesCalculation) {
         alert("Your balance is not enough!!!");
