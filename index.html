@@ -7,7 +7,7 @@
     <title>Bank Calculation</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
     <!-- Customize CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -19,14 +19,24 @@
     <main>
       <h1 class="text-success text-center fw-bold my-4">Bank Calculation</h1>
 
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-12">
-              <img src="images/money.jpg" class="img-fluid" alt="">
+      <section class="container">
+        <div class="card-group gap-5">
+          <div class="card border-0">
+            <img src="images/money.jpg" class="card-img-top" alt="money" />
+          </div>
+
+          <div class="card border-0 bg-secondary p-2 text-dark bg-opacity-10">
+            <div class="card-body">
+              <h5 class="card-title text-center">Income</h5>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                </div>
+              </div>
             </div>
-            <div class="col-md-6 col-12">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui debitis dignissimos beatae minus culpa saepe quidem illum doloribus commodi. Saepe, quia suscipit atque officiis, sit ratione sequi accusamus ut non fugiat sunt eos sed architecto consequuntur rerum minus tempore laboriosam? Iure eveniet error nisi quia numquam voluptatibus nesciunt optio ut!</p>
+            <div class="card-footer border-0">
+              <small class="text-muted">saving part</small>
             </div>
           </div>
         </div>
