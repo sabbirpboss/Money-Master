@@ -67,16 +67,15 @@ document.getElementById("saving-button").addEventListener("click", function () {
   const myIncome = document.getElementById("my-income").value;
 
   //get saving value
-  const percentField = document.getElementById("percent-field");
-  const savingValue = percentField.value;
+  const percentField = document.getElementById("percent-field").value;
 
   //saving calculation
-  const savingCalculation = (myIncome * savingValue) / 100;
+  const savingCalculation = (myIncome * percentField) / 100;
   //show final saving amount
   const savingAmount = (document.getElementById("saving-amount").innerText =
     savingCalculation);
 
-  if (isNaN(savingValue) != 0 || savingValue <= 0) {
+  if (isNaN(percentField) != 0 || percentField <= 0) {
     alert("enter a positive value");
   }
   //remaining balance
@@ -85,7 +84,11 @@ document.getElementById("saving-button").addEventListener("click", function () {
   //calculation remaining amount
   const remainingAmount = presentBalance - savingAmount;
   // show remaining amount
-  const remainingBalance = (document.getElementById(
-    "remaining-balance"
-  ).innerText = remainingAmount);
+  let remainingBalance = document.getElementById("remaining-balance");
+  remainingBalance.innerText = remainingAmount;
+
+  if (presentBalance < savingAmount) {
+    alert("Your Saving amount is not enough");
+    remainingBalance.innerText = '00';
+  }
 });
