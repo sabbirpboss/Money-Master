@@ -48,9 +48,9 @@ document
     //calculation balance
     const myIncome = document.getElementById("my-income").value;
     const presentBalance = myIncome - totalExpensesCalculation;
-    const balance = document.getElementById("balance");
-    const balanceText = balance.innerText;
+    let balance = document.getElementById("balance");
     balance.innerText = presentBalance;
+    // const balanceText = balance.innerText;
 
     if (myIncome < totalExpensesCalculation) {
         alert("Your balance is not enough!!!");
