@@ -12,8 +12,7 @@
     <!-- Customize CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Customize JS  -->
-    <script src="js/main.js"></script>
+
   </head>
   <body>
     <main>
@@ -33,7 +32,7 @@
                   <p class="text-dark py-1 border-0">Income:</p>
                 </div>
                 <div class="col-md-9">
-                  <input
+                  <input id="my-income"
                     class="bg-secondary text-dark px-3 py-1 bg-opacity-10 border-0 rounded"
                     type="text"
                     placeholder="Your Income"
@@ -46,7 +45,7 @@
                   <p class="text-dark py-1 border-0">Food:</p>
                 </div>
                 <div class="col-md-9">
-                  <input
+                  <input id="food-cost"
                     class="bg-secondary text-dark px-3 py-1 bg-opacity-10 border-0 rounded"
                     type="text"
                     placeholder="Your Food"
@@ -56,7 +55,7 @@
                   <p class="text-dark py-1 border-0">Rent:</p>
                 </div>
                 <div class="col-md-9">
-                  <input
+                  <input id="rent-cost"
                     class="bg-secondary text-dark px-3 py-1 bg-opacity-10 border-0 rounded"
                     type="text"
                     placeholder="Your Rent"
@@ -66,7 +65,7 @@
                   <p class="text-dark py-1 border-0">Clothes:</p>
                 </div>
                 <div class="col-md-9">
-                  <input
+                  <input id="cloth-cost"
                     class="bg-secondary text-dark px-3 py-1 bg-opacity-10 border-0 rounded"
                     type="text"
                     placeholder="Your Clothes"
@@ -74,11 +73,11 @@
                 </div>
               </div>
               <div class="col-md-12 text-center">
-                <button class="btn btn-success">Calculate</button>
+                <button id="calculate-button" class="btn btn-success">Calculate</button>
               </div>
 
-              <h5 class="card-title text-center my-4">Total Expenses: 5500</h5>
-              <h5 class="card-title text-center my-4">Balance: 4500</h5>
+              <h5 class="card-title text-center my-4">Total Expenses: <span id="total-expenses">00</span></h5>
+              <h5 class="card-title text-center my-4">Balance: <span id="balance">00</span></h5>
 
               <!-- saving part -->
               <div class="row">
@@ -111,5 +110,7 @@
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Customize JS  -->
+        <script src="js/main.js"></script>
   </body>
 </html>
